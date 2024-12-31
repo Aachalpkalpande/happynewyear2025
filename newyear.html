@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            overflow: hidden;
+        }
+        .background-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+             object-fit: cover; z-index: -1; }
+        .new-year {
+            text-align: center;
+        }
+        .animation {
+            font-size: 3em;
+            animation: fadeInOut 3s infinite;
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="background-video"> <source src="e1.mp4" type="video/mp4"> 
+        Your browser does not support the video tag. </video>
+    <div class="animation"><b>Wellcome 2025!!!
+        <p>Happy New Year All My </p>
+        Friends and Family ❤️😘</b></div>
+</body>
+</html>
